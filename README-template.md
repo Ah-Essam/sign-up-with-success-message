@@ -21,8 +21,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/Ah-Essam/sign-up-with-success-message.git)
+- Live Site URL: [live site URL](https://sign-up-with-success-message.vercel.app/)
 
 ## My process
 
