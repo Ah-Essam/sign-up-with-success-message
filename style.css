@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: hsl(234, 29%, 20%);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  position: relative;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .img {
+  width: 100%;
+  height: 290px;
+  background-size: cover;
+  background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+  margin-bottom: 25px;
+}
+.container .img img  {
+  display: none;
+}
+
+
+.the-content {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.the-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+
+.the-content p {
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+.list > div {
+  display: flex;
+}
+.list .list-icon {
+  background-image: url(./assets/images/icon-list.svg);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  display: inline-block;
+  margin-right: 20px;
+}
+.list {
+  margin-bottom: 30px;
+}
+.email-inp {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.email-inp label {
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.email-inp input:not([type=submit]) {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid hsl(231, 7%, 60%);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-size: 14px;
+}
+.the-content input[type=submit] {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  font-size: 16px;
+  color: var(--main-color);
+  background-color: var(--main-color);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.unavailoble {
+  border-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.1);
+  color: rgba(255, 0, 0, .5);
+}
+.the-content .email-inp .txt {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.the-content .email-inp .txt {
+  margin-bottom: 10px;
+  position: relative;
+}
+.the-content .email-inp p {
+  color: red;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.the-content input[type=submit]:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+.subscribed-msg {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  color: var(--main-color);
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.subscribed-msg img {
+  margin: 150px 0 30px 0;
+}
+.subscribed-msg h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.subscribed-msg p span {
+  font-weight: bold;
+}
+.subscribed-msg button {
+  bottom: 0;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  color: var(--main-color);
+  background-color: var(--main-color);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.subscribed-msg button:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+.overlay {
+  display: none;
+}
