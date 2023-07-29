@@ -12,7 +12,7 @@ document.querySelector(".the-content input[type=submit]").onclick = function () 
   if (validation == true) {
     overlay.style = "display: block"
     subMsg.style = "display: flex"
-    theMail.innerhtml = theInp.value
+    theMail.innerHTML = theInp.value
   }else {
     document.querySelector(".the-content .email-inp p").style.display = "block"
     theInp.classList.add("unavailoble")
