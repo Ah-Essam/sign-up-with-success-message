@@ -2,6 +2,7 @@
 let overlay = document.querySelector(".container .overlay")
 let subMsg = document.querySelector(".container .subscribed-msg")
 let theInp = document.querySelector("#email")
+let theMail = document.querySelector("the-e-mail")
 
 // /^[a-z0-9\.-_%]+@[a-z]+.[a-z]$/ig
 
@@ -11,6 +12,7 @@ document.querySelector(".the-content input[type=submit]").onclick = function () 
   if (validation == true) {
     overlay.style = "display: block"
     subMsg.style = "display: flex"
+    theMail.innerHtml = theInp.value
   }else {
     document.querySelector(".the-content .email-inp p").style.display = "block"
     theInp.classList.add("unavailoble")
